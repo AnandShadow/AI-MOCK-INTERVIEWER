@@ -48,7 +48,7 @@ if not api_key:
     st.stop()
 
 # Initialize Groq client
-client = Groq(api_key=api_key)
+client = Groq(api_key=api_key.strip())
 model = "llama-3.3-70b-versatile"
 
 # --- State Management ---
